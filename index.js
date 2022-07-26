@@ -15,7 +15,11 @@ const RunApi = async () =>{
     "method": "POST"
   });
 
-  console.log(result.data);
+
+  result.then((out)=>{
+    console.log(result);
+  })
+  // console.log(result.data);
 }
 
 RunApi();
